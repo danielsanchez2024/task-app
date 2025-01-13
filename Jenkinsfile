@@ -36,7 +36,7 @@ pipeline {
 
         stage('Tag para Docker Registry') {
             steps {
-                sh 'docker tag task-api:latest danielsanchez18/task-app:latest'
+                sh 'docker tag task-app:latest danielsanchez18/task-app:latest'
             }
         }
 
