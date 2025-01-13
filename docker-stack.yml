@@ -1,0 +1,25 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb_data:/data/db
+    networks:
+      database:
+        aliases:
+          - mongodb.docker
+
+  todo-app:
+    image: task-app
+    ports:
+      - "5000:5000"
+    networks:
+      database:
+        aliases:
+          - app.docker
+
+networks:
+  database:
+    driver: overlay
