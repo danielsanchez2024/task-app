@@ -63,7 +63,7 @@ pipeline {
 
     post {
         success {
-            echo 'La imagen fue construida y subida con éxito.'
+            echo 'La imagen fue construida y el servicio actualizados correctamente'
         }
         failure {
             echo 'Hubo un error durante el proceso.'
