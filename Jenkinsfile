@@ -16,7 +16,7 @@ pipeline {
 
         stage('Clonar Repositorio') {
             steps {
-                sh 'git clone -b main git@github.com:danielsanchez2024/task-app.git'
+                sh 'git clone -b main https://github.com/danielsanchez2024/task-app.git'
             }
         }
 
