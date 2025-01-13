@@ -43,7 +43,7 @@ pipeline {
 
         stage('Iniciar Sesión en Docker Registry') {
             steps {
-                 sh 'echo 1193380373 | docker login -u danielsanchez18 --password-stdin'
+                 sh 'echo  | docker login -u danielsanchez18 --password-stdin'
             }
         }
 
