@@ -12,7 +12,7 @@ services:
           - mongodb.docker
 
   todo-app:
-    image: task-app
+    image: danielsanchez18/task-app:latest
     ports:
       - "5000:5000"
     networks:

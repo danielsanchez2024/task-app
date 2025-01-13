@@ -53,6 +53,12 @@ pipeline {
                 sh 'docker push danielsanchez18/task-app:latest'
             }
         }
+
+        stage('Actualizar servicio'){
+            steps{
+                sh 'docker service update --image danielsanchez18/task-app:latest api_task_todo-app'
+            }
+        }
     }
 
     post {
